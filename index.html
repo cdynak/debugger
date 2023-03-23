@@ -18,19 +18,240 @@
 			<div class="slides">
 
 				<section>
-					<h2>Jak przestać się martwić i pokochać debugowanie w TypeScript</h2>
-					<h3>Cezary Dynak</h3>
-					<h4>Gdańsk, 2023-03-23</h4>
+					<section>
+						<h2>Jak przestać się martwić i pokochać debugowanie w TypeScript</h2>
+						<h3>Cezary Dynak</h3>
+						<h4>Gdańsk, 2023-03-23</h4>
+					</section>
+					<section>
+						<h2>bibliography is inside source code</h2>
+						<p>
+							<a href="cdynak.github.io/debugger"
+								>cdynak.github.io/debugger</a
+							>
+						</p>
+					</section>
 				</section>
 
 				<section>
-					<h2>bibliography is inside source code</h2>
-					<p>
-						<a href="cdynak.github.io/debugger"
-							>cdynak.github.io/debugger</a
-						>
-					</p>
+			    <section>
+            <h2>about me</h2>
+						<p>
+							<a href="linkedin.com/in/cdynak"
+								>linkedin.com/in/cdynak</a
+							>
+						</p>
+					</section>
+					<section>
+            <p>2012</p>
+            <ul>
+              <li>Nexwell Engineering</li>
+              <li>PWr / W4 / AiR / lab07</li>
+            </ul>
+            <p>2017</p>
+            <ul>
+              <li>Viessmann R&D</li>
+              <li>Spyrosoft</li>
+            </ul>
+					</section>
+					<section>
+            <p>2021</p>
+            <ul>
+              <li>STX Next</li>
+              <li>dynak.com</li>
+            </ul>
+						<p>2023</p>
+            <ul>
+              <li>TapNav</li>
+              <li>meet.js</li>
+            </ul>
+          </section>
+
+					
+					<!-- primegaen - know your tools -->
 				</section>
+
+				<section>
+					<section>
+						<h2>why debugger is not used?</h2>
+					</section>
+					<section>
+            <img src="https://pbs.twimg.com/media/FGK3rKNUUAY6a1i?format=jpg&name=small" />
+            <!-- https://twitter.com/code_memez/status/1468938407720079365 -->
+          </section>
+					<section>
+						<h2>because we don't make bugs</h2>
+						<h2>( ͡° ͜ʖ ͡°)</h2>
+					</section>
+					<section>
+            <img src="https://media.makeameme.org/created/dont-need-debugger.jpg" />
+            <!-- https://makeameme.org/meme/dont-need-debugger -->
+          </section>
+					<section>
+						<h2>because console.log() ...:</h2>
+					</section>
+					<section>
+            <img src="https://i.redd.it/eum8qvgim2u01.jpg" />
+            <!-- https://www.reddit.com/r/ProgrammerHumor/comments/8euas5/debugging_at_its_finest/ -->
+          </section>
+					<section>
+            <img src="https://programmerhumor.io/wp-content/uploads/2023/02/programmerhumor-io-debugging-memes-programming-memes-efc359afc22f756-758x693.jpg" />
+            <!-- https://programmerhumor.io/debugging-memes/when-they-ask-you-to-fix-a-bug/ -->
+          </section>
+					<section>
+            <img src="https://www.paigeniedringhaus.com/static/2b3d6f647f82975bb41ff9d832f237bd/41099/most-interesting-man.jpg" />
+            <!-- https://www.paigeniedringhaus.com/blog/the-absolute-easiest-way-to-debug-node-js-with-vs-code -->
+          </section>
+					<section>
+            <img src="https://i.imgflip.com/44251s.jpg" />
+            <!-- https://imgflip.com/i/44251s -->
+          </section>
+					<section>
+            <img src="https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-9/53506212_506027126467923_5604342437586665472_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=zY1QWTz_9rIAX8SvOMn&_nc_ht=scontent-fra3-1.xx&oh=00_AfAo7WiZfVHo9PwG0_k2u4aCWaLJIImp-o-xur14w5NCiA&oe=6443D4DA" />
+            <!-- https://www.facebook.com/AlgorithmsWithRachitJain/photos/a.276294002774571/506027119801257/?type=3 -->
+          </section>
+					<section>
+            <img src="https://programmerhumor.io/wp-content/uploads/2023/02/programmerhumor-io-debugging-memes-programming-memes-4a05c222633d0b6.jpg" />
+            <!-- https://programmerhumor.io/debugging-memes/ultimate-debugger/ -->
+          </section>
+					
+					<section>
+						<h2>because console.log() ...:</h2>
+						<ul>
+							<li>just works.</li>
+							<li>have nice formatting</li>
+							<li>it's easy</li>
+							<li>it's understandable</li>
+							<li>everyone is using it</li>
+            </ul>
+					</section>
+					<section>
+						<h2>because we have multiple log levels</h2>
+					</section>
+					<section>
+						<h2>because we have unit tests everywhere</h2>
+					</section>
+					<section>
+						<h2>because we are using plain JavaScript</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							basic example
+						</h2>
+						<p>
+							<a href="https://nodejs.org/en/about"
+								>nodejs.org/en/about</a
+							>
+						</p>
+					</section>
+					
+					
+					
+					
+					
+					<section>
+            <img src="http://www.quickmeme.com/img/be/becf5aab03f95f9ee0b9d81fdf27e01879d5b73900c46fcc1d401ec54488ca38.jpg" />
+            <!-- http://www.quickmeme.com/meme/36i7rs -->
+          </section>
+
+					<!-- (meme: internet is running in debug mode)-->
+					<section>
+						<h2>
+							DevTools
+						</h2>
+					</section>
+					<section>
+						<img src="https://goodguydaniel.com/static/da6d0384d8cb73b615b350032d224c92/d1f95/expanding-brain.jpg" />
+						<!-- https://goodguydaniel.com/blog/debugging-javascript-with-vscode -->
+					</section>
+					<section>
+						<h2>
+							VS Code
+						</h2>
+					</section>
+				</section>
+
+				<!--
+					https://nodejs.org/en/about
+					cat > index.js
+					...
+					node index.js
+					curl localhost:3000
+					node --inspect index.js
+					curl localhost:9229
+
+					$ curl localhost:3000
+					Hello World$
+
+          $ curl localhost:9229
+          WebSockets request was expected
+
+					$ curl ws://127.0.0.1:9229/bc31b8f5-86c4-4b10-9ec6-450838affa13
+					curl: (1) Protocol "ws" not supported or disabled in libcurl
+
+          $ websocat ws://127.0.0.1:9229/bc31b8f5-86c4-4b10-9ec6-450838affa13
+					{"error":{"code":-32700,"message":"Message must be a valid JSON"}}
+					{"error":{"code":-32601,"message":"'' wasn't found"},"id":0}
+					{}https://www.docker.com/sites/default/files/containers-vms-together.png
+					{"error":{"code":-32600,"message":"Message must have integer 'id' property"}}
+					{"error":{"code":-32601,"message":"'' wasn't found"},"id":0}
+					{"id":0}
+					{"error":{"code":-32600,"message":"Message must have string 'method' property"},"id":0}
+					{"error":{"code":-32601,"message":"'' wasn't found"},"id":0}
+
+					$ sudo ngrep -d any port 9229
+					$ sudo ngrep -d any port 9229 > ngrep9229.log
+					$ tail -f ngrep9229.log
+
+					chrome://inspect
+				-->
+
+				<section>
+					<section>
+						<h2>
+							TypeScript / Docker example
+						</h2>
+						<p>
+							<a href="https://github.com/flolu/docker-typescript-debug"
+								>github.com/flolu/docker-typescript-debug</a
+							>
+						</p>
+					</section>
+					<section>
+						<img src="https://www.paigeniedringhaus.com/static/199d8fdb67eb993e64ede4914b3de748/cb69c/caveman-could-do-it.jpg" />
+						<!-- https://www.paigeniedringhaus.com/blog/the-absolute-easiest-way-to-debug-node-js-with-vs-code -->
+					</section>
+				</section>
+				
+
+				<section>
+          <section>
+            <h2>Thank you for attention</h2>
+          </section>
+          <section>
+            <h2>discussion / questions?</h2>
+          </section>
+					<section>
+						<h2>bibliography is inside source code</h2>
+						<p>
+							<a href="cdynak.github.io/debugger"
+								>cdynak.github.io/debugger</a
+							>
+						</p>
+					</section>
+				</section>
+
+				
+
+				<!--
+					(meme: so easy caveman can use it)
+					(meme: lex friedman moving to vscode - from emacs/primegaen vim reaction)
+					https://github.com/eliba2/vim-node-inspect
+					https://dev.to/iggredible/debugging-in-vim-with-vimspector-4n0m
+				-->
 
 			</div>
 		</div>
